@@ -1,0 +1,7 @@
+repositories {
+  maven { url 'https://zendesk.jfrog.io/zendesk/repo' }
+}
+
+dependencies {
+    implementation group: 'com.zendesk', name: 'support', version: '3.0.1'
+}
