@@ -60,21 +60,21 @@ var ZendeskSdk = (function () {
         if (options === void 0) { options = {}; }
         if (uiConfig === void 0) { uiConfig = []; }
         this._initHelpCenter(options)
-            .withArticlesForCategoryIds(categoryIds)
+            .withArticlesForCategoryIds(new java.util.ArrayList(java.util.Arrays.asList(categoryIds)))
             .show(frame_1.topmost().android.activity, this.getHelpCenterUiConfigs(options, uiConfig));
     };
     ZendeskSdk.showHelpCenterForSectionIds = function (sectionIds, options, uiConfig) {
         if (options === void 0) { options = {}; }
         if (uiConfig === void 0) { uiConfig = []; }
         this._initHelpCenter(options)
-            .withArticlesForSectionIds(sectionIds)
+            .withArticlesForSectionIds(new java.util.ArrayList(java.util.Arrays.asList(sectionIds)))
             .show(frame_1.topmost().android.activity, this.getHelpCenterUiConfigs(options, uiConfig));
     };
     ZendeskSdk.showHelpCenterForLabelNames = function (labelNames, options, uiConfig) {
         if (options === void 0) { options = {}; }
         if (uiConfig === void 0) { uiConfig = []; }
         this._initHelpCenter(options)
-            .withLabelNames(labelNames)
+            .withLabelNames(new java.util.ArrayList(java.util.Arrays.asList(labelNames)))
             .show(frame_1.topmost().android.activity, this.getHelpCenterUiConfigs(options, uiConfig));
     };
     ZendeskSdk.showArticle = function (articleId, options, uiConfig) {
